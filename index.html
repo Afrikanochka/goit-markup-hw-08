@@ -13,7 +13,7 @@
 </head>
 <body> 
     <!--Верхняя линия-->
-    <header class="header">
+    <!-- <header class="header">
         <div class="container header__container">
             <nav class="navigation">
             <a href="./index.html" class="logo header-logo"> <span class="colortext"> Web</span>Studio</a>
@@ -41,7 +41,7 @@
             </ul>
         </div>
                               
-    </header>
+    </header> -->
     <main>
     <!--Шапка-->
         <section class="hero">
@@ -127,7 +127,18 @@
             <h2 class="section__title">Наша команда</h2>
             <ul class="user">
                 <li class="user__item">
-                    <img class="img" src="./images/img.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+                    <picture class="user__picture">
+                        <source srcset="./images/users/user1.webp 1x, ./images/users/user1@2x.webp 2x" media="(min-width: 1200px)"
+                            type="image/webp">
+                        <source srcset="./images/users/user1.jpg 1x, ./images/users/user1@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/users/user-tab1.webp 1x, ./images/users/user-tab1@2x.webp 2x" media="(min-width: 768px)"
+                            type="image/webp">
+                        <source srcset="./images/users/user-tab1.jpg 1x, ./images/users/user-tab1@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/users/user-mobile1.webp 1x, ./images/users/user-mobile1@2x.webp 2x" media="(min-width: 480px)"
+                        type="image/webp">
+                        <source srcset="./images/users/user-mobile1.jpg 1x, ./images/users/user-mobile1@2x.jpg 2x" media="(min-width: 480px)">
+                        <img class="img" src="./images/users/user-mobile1.jpg" alt="Игорь Демьяненко" />
+                    </picture>
                     <div class="user__avatar">
                         <h3 class="user__avatar_title">Игорь Демьяненко</h3>
                         <p class="user__avatar_text" lang="en">Product Designer</p>
@@ -156,7 +167,18 @@
                     </div>
                 </li>
                 <li class="user__item">
-                    <img class="img" src="./images/img(1).jpg" alt="Ольга Репина" width="270" height="260" />
+                    <picture class="user__picture">
+                        <source srcset="./images/users/user2.webp 1x, ./images/users/user2@2x.webp 2x" media="(min-width: 1200px)"
+                            type="image/webp">
+                        <source srcset="./images/users/user2.jpg 1x, ./images/users/user2@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/users/user-tab2.webp 1x, ./images/users/user-tab2@2x.webp 2x" media="(min-width: 768px)"
+                            type="image/webp">
+                        <source srcset="./images/users/user-tab2.jpg 1x, ./images/users/user-tab2@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/users/user-mobile2.webp 1x, ./images/users/user-mobile2@2x.webp 2x" media="(min-width: 480px)"
+                            type="image/webp">
+                        <source srcset="./images/users/user-mobile2.jpg 1x, ./images/users/user-mobile2@2x.jpg 2x" media="(min-width: 480px)">
+                        <img class="img" src="./images/users/user-mobile2.jpg" alt="Ольга Репина" />
+                    </picture>
                     <div class="user__avatar">
                         <h3 class="user__avatar_title">Ольга Репина</h3>
                         <p class="user__avatar_text" lang="en">Frontend Developer</p>
@@ -185,7 +207,18 @@
                     </div>
                 </li>
                 <li class="user__item">
-                    <img class="img" src="./images/img(2).jpg" alt="Николай Тарасов" width="270" height="260" />
+                    <picture class="user__picture">
+                        <source srcset="./images/users/user3.webp 1x, ./images/users/user3@2x.webp 2x" media="(min-width: 1200px)"
+                            type="image/webp">
+                        <source srcset="./images/users/user3.jpg 1x, ./images/users/user3@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/users/user-tab3.webp 1x, ./images/users/user-tab3@2x.webp 2x" media="(min-width: 768px)"
+                            type="image/webp">
+                        <source srcset="./images/users/user-tab3.jpg 1x, ./images/users/user-tab3@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/users/user-mobile3.webp 1x, ./images/users/user-mobile3@2x.webp 2x" media="(min-width: 480px)"
+                            type="image/webp">
+                        <source srcset="./images/users/user-mobile3.jpg 1x, ./images/users/user-mobile3@2x.jpg 2x" media="(min-width: 480px)">
+                        <img class="img" src="./images/users/user-mobile3.jpg" alt="Николай Тарасов" />
+                    </picture>
                     <div class="user__avatar">
                         <h3 class="user__avatar_title">Николай Тарасов</h3>
                         <p class="user__avatar_text" lang="en">Marketing</p>
@@ -214,7 +247,18 @@
                     </div>
                 </li>
                 <li class="user__item">
-                    <img class="img" src="./images/img(3).jpg" alt="Михаил Ермаков" width="270" height="260" />
+                    <picture class="user__picture">
+                        <source srcset="./images/users/user4.webp 1x, ./images/users/user4@2x.webp 2x" media="(min-width: 1200px)"
+                            type="image/webp">
+                        <source srcset="./images/users/user4.jpg 1x, ./images/users/user4@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/users/user-tab4.webp 1x, ./images/users/user-tab4@2x.webp 2x" media="(min-width: 768px)"
+                            type="image/webp">
+                        <source srcset="./images/users/user-tab4.jpg 1x, ./images/users/user-tab4@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/users/user-mobile4.webp 1x, ./images/users/user-mobile4@2x.webp 2x" media="(min-width: 480px)"
+                            type="image/webp">
+                        <source srcset="./images/users/user-mobile4.jpg 1x, ./images/users/user-mobile4@2x.jpg 2x" media="(min-width: 480px)">
+                        <img class="img" src="./images/users/user-mobile4.jpg" alt="Михаил Ермаков" />
+                    </picture>
                     <div class="user__avatar">
                         <h3 class="user__avatar_title">Михаил Ермаков</h3>
                         <p class="user__avatar_text" lang="en">UI Designer</p>

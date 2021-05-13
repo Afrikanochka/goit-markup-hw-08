@@ -1,7 +1,11 @@
 /* Advanture */
 .advanture-section {
+  display: none;
   padding-top: 0;
   padding-bottom: 0;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 .advanture {
   display: flex;

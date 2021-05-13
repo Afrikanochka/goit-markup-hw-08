@@ -1,7 +1,7 @@
 /* Footer */
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  // padding-top: 60px;
+  // padding-bottom: 60px;
   background-color: #2f303a;
   &__address_mail {
     margin-top: 9px;
@@ -33,6 +33,8 @@
   }
   &__list {
     display: flex;
+  @media screen and (min-width: 480px) {
+display: flex;
   }
   &__item {
     width: 44px;
@@ -62,9 +64,9 @@
   }
 }
 .left-side {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
   width: 100%;
 }
 
@@ -85,7 +87,7 @@
 }
 
 .address {
-  max-width: 231px;
+  // max-width: 231px;
   color: var(--subtitle-color);
   font-style: normal;
   font-size: 14px;
