@@ -13,7 +13,7 @@
 </head>
 <body> 
     <!--Верхняя линия-->
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header__container">
             <nav class="navigation">
             <a href="./index.html" class="logo header-logo"> <span class="colortext"> Web</span>Studio</a>
@@ -39,9 +39,51 @@
                             +38 096 111 11 11
                         </a></li>
             </ul>
+            <button class="header__mobile-menu-btn" type="button" data-menu-button>
+                <svg class="mobile-icon">
+                    <use href="./images/sprite.svg#menu"></use>
+                </svg>
+            </button>  
         </div>
-                              
-    </header> -->
+        <div class="mobile-menu is-hidden" data-menu>
+           
+                <button class="mobile-menu-close" type="button" data-menu-close>
+                    <svg class="mobile-icon-close">
+                        <use href="./images/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+        <div class="container mobile-menu__container">
+            <ul class="mobile-menu__list">
+               <li class="mobile-menu__item">
+                   <a href="./index.html" class="mobile-menu__link mobile-menu__link_current link">Студия</a></li>
+               <li class="mobile-menu__item">
+                   <a href="./portfolio.html" class="mobile-menu__link link">Портфолио</a></li>
+               <li class="mobile-menu__item">
+                   <a href="Контакты" class="mobile-menu__link link">Контакты</a></li>
+            </ul>
+            <ul class="mobile-menu__grid">
+                <li class="mobile-menu__grid_item">
+                    <a href="tel:+380961111111" class="mobile-menu__grid_tel link">+38 096 111 11 11</a></li>
+                <li class="mobile-menu__grid_item">
+                    <a href="mailto:info@devstudio.com" class="mobile-menu__grid_mail link" lang="en">info@devstudio.com</a></li>
+            </ul>
+            <ul class="mobile-menu__social">
+                <li class="mobile-menu__social_item">
+                    <a href="" class="mobile-menu__social_link link">Instagram</a>
+                </li>
+                <li class="mobile-menu__social_item">
+                    <a href="" class="mobile-menu__social_link link">Twitter</a>
+                </li>
+                <li class="mobile-menu__social_item">
+                    <a href="" class="mobile-menu__social_link link">Facebook</a>
+                </li>
+                <li class="mobile-menu__social_item">
+                    <a href="" class="mobile-menu__social_link link">LinkedIn</a>
+                </li>
+            </ul>
+            </div>
+        </div>                      
+    </header>
     <main>
     <!--Шапка-->
         <section class="hero">
@@ -128,9 +170,9 @@
             <ul class="user">
                 <li class="user__item">
                     <picture class="user__picture">
-                        <source srcset="./images/users/user1.webp 1x, ./images/users/user1@2x.webp 2x" media="(min-width: 1200px)"
+                        <source srcset="./images/users/img.webp 1x, ./images/users/img1@2x.webp 2x" media="(min-width: 1200px)"
                             type="image/webp">
-                        <source srcset="./images/users/user1.jpg 1x, ./images/users/user1@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/users/img.jpg 1x, ./images/users/img1@2x.jpg 2x" media="(min-width: 1200px)">
                         <source srcset="./images/users/user-tab1.webp 1x, ./images/users/user-tab1@2x.webp 2x" media="(min-width: 768px)"
                             type="image/webp">
                         <source srcset="./images/users/user-tab1.jpg 1x, ./images/users/user-tab1@2x.jpg 2x" media="(min-width: 768px)">
@@ -168,9 +210,9 @@
                 </li>
                 <li class="user__item">
                     <picture class="user__picture">
-                        <source srcset="./images/users/user2.webp 1x, ./images/users/user2@2x.webp 2x" media="(min-width: 1200px)"
+                        <source srcset="./images/users/img2.webp 1x, ./images/users/img2@2x.webp 2x" media="(min-width: 1200px)"
                             type="image/webp">
-                        <source srcset="./images/users/user2.jpg 1x, ./images/users/user2@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/users/img2.jpg 1x, ./images/users/img2@2x.jpg 2x" media="(min-width: 1200px)">
                         <source srcset="./images/users/user-tab2.webp 1x, ./images/users/user-tab2@2x.webp 2x" media="(min-width: 768px)"
                             type="image/webp">
                         <source srcset="./images/users/user-tab2.jpg 1x, ./images/users/user-tab2@2x.jpg 2x" media="(min-width: 768px)">
@@ -208,9 +250,9 @@
                 </li>
                 <li class="user__item">
                     <picture class="user__picture">
-                        <source srcset="./images/users/user3.webp 1x, ./images/users/user3@2x.webp 2x" media="(min-width: 1200px)"
+                        <source srcset="./images/users/img3.webp 1x, ./images/users/img3@2x.webp 2x" media="(min-width: 1200px)"
                             type="image/webp">
-                        <source srcset="./images/users/user3.jpg 1x, ./images/users/user3@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/users/img3.jpg 1x, ./images/users/img3@2x.jpg 2x" media="(min-width: 1200px)">
                         <source srcset="./images/users/user-tab3.webp 1x, ./images/users/user-tab3@2x.webp 2x" media="(min-width: 768px)"
                             type="image/webp">
                         <source srcset="./images/users/user-tab3.jpg 1x, ./images/users/user-tab3@2x.jpg 2x" media="(min-width: 768px)">
@@ -248,9 +290,9 @@
                 </li>
                 <li class="user__item">
                     <picture class="user__picture">
-                        <source srcset="./images/users/user4.webp 1x, ./images/users/user4@2x.webp 2x" media="(min-width: 1200px)"
+                        <source srcset="./images/users/img4.webp 1x, ./images/users/img4@2x.webp 2x" media="(min-width: 1200px)"
                             type="image/webp">
-                        <source srcset="./images/users/user4.jpg 1x, ./images/users/user4@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/users/img4.jpg 1x, ./images/users/img4@2x.jpg 2x" media="(min-width: 1200px)">
                         <source srcset="./images/users/user-tab4.webp 1x, ./images/users/user-tab4@2x.webp 2x" media="(min-width: 768px)"
                             type="image/webp">
                         <source srcset="./images/users/user-tab4.jpg 1x, ./images/users/user-tab4@2x.jpg 2x" media="(min-width: 768px)">
@@ -334,7 +376,7 @@
     <!--Подвал-->
     <footer class="footer"> 
         <section class="section">
-             <div class="container">
+             <div class="container footer__container">
                  <div class="left-side">
                     <div class="footer__address">
                             <a href="./index.html" class="logo footer-logo"> <span class="colortext"> Web</span>Studio</a>
@@ -369,7 +411,7 @@
                             </li>
                         </ul>
                     </div>
-                        
+                </div>
                     <div class="right-side">
                        <p class="footer__wrap_text">Подпишитесь на рассылку</p>
                         <form action="#" class="footer__form">
@@ -384,7 +426,7 @@
                             </button>
                         </form>
                     </div>
-                 </div>
+                
             </div>
         </section>          
     </footer>
@@ -443,7 +485,7 @@
         </div>
         
     </div>
-
+<script src="./js/mobile-menu.js"></script>
 <script src="./js/modal.js"></script>
 </body>
 </html>
