@@ -623,8 +623,9 @@ img {
   }
   .grid {
     margin-left: auto;
+    margin-bottom: -10px;
   }
-  .grid__item:not(:last-child) {
+  .grid__item {
     margin-bottom: 10px;
   }
   .grid__link {
