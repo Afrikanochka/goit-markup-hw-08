@@ -2,12 +2,22 @@
 .mobile-icon {
   width: 40px;
   height: 40px;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 .mobile-icon-close {
   width: 40px;
   height: 40px;
+  fill: #212121;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 .mobile-menu__container {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -35,47 +45,66 @@
   pointer-events: none;
   padding: 48px 40px;
   background-color: var(--primary-bg-color);
+  &__item {
+    margin-bottom: 32px;
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+    &_current {
+      color: var(--accent-color);
+    }
+  }
+  &__grid {
+    margin-bottom: 64px;
+  }
+  &__grid_item {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+  &__grid_tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
+  &__grid_mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+  }
+  &__social {
+    display: flex;
+  }
+  &__social_item {
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+  &__social_link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
 }
 .mobile-menu.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-}
-.mobile-menu__link {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-  &:not(:last-child) {
-    margin-bottom: 32px;
-  }
-}
-.mobile-menu__grid_tel {
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
-}
-.mobile-menu__grid_mail {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
-}
-.mobile-menu__social {
-  display: flex;
-}
-.mobile-menu__social_link {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
 }

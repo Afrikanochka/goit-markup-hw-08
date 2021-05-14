@@ -7,7 +7,7 @@
     @media screen and (min-width: 1200px) {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: space-between;
     }
   }
   &__address_mail {
@@ -63,9 +63,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // @media screen and (min-width: 1200px) {
-    //   flex-basis: calc((100% - 4 * 30px) / 4);
-    // }
+  }
+  &__wrap {
+    @media screen and (min-width: 1200px) {
+      margin-left: 70px;
+    }
   }
 
   &__list_link {
@@ -105,13 +107,13 @@
   padding-left: 15px;
   padding-right: 15px;
   @media screen and (min-width: 768px) {
-    // width: 450px;
     justify-content: center;
     text-align: center;
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 2 * 30px) / 2);
     text-align: left;
+    justify-content: flex-start;
   }
 }
 
@@ -144,6 +146,8 @@
   align-items: center;
   @media screen and (min-width: 1200px) {
     display: flex;
+    flex-direction: row;
+    align-items: end;
   }
 }
 
@@ -170,9 +174,13 @@
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
   }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
+    width: 100%;
   }
 }
 
