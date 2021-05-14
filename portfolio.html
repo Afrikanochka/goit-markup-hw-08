@@ -40,16 +40,63 @@
                         +38 096 111 11 11
                     </a>
                 </li>
-            </ul>
+            </ul>       
+                <button class="header__mobile-menu-btn" type="button" data-menu-button>
+                    <svg class="mobile-icon">
+                        <use href="./images/sprite.svg#menu"></use>
+                    </svg>
+                </button>
         </div>
-    
+                <div class="mobile-menu is-hidden" data-menu>
+                
+                    <button class="mobile-menu-close" type="button" data-menu-close>
+                        <svg class="mobile-icon-close">
+                            <use href="./images/sprite.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <div class="container mobile-menu__container">
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item">
+                                <a href="./index.html" class="mobile-menu__link link">Студия</a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a href="./portfolio.html" class="mobile-menu__link mobile-menu__link_current link">Портфолио</a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a href="Контакты" class="mobile-menu__link link">Контакты</a>
+                            </li>
+                        </ul>
+                        <ul class="mobile-menu__grid">
+                            <li class="mobile-menu__grid_item">
+                                <a href="tel:+380961111111" class="mobile-menu__grid_tel link">+38 096 111 11 11</a>
+                            </li>
+                            <li class="mobile-menu__grid_item">
+                                <a href="mailto:info@devstudio.com" class="mobile-menu__grid_mail link" lang="en">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                        <ul class="mobile-menu__social">
+                            <li class="mobile-menu__social_item">
+                                <a href="" class="mobile-menu__social_link link">Instagram</a>
+                            </li>
+                            <li class="mobile-menu__social_item">
+                                <a href="" class="mobile-menu__social_link link">Twitter</a>
+                            </li>
+                            <li class="mobile-menu__social_item">
+                                <a href="" class="mobile-menu__social_link link">Facebook</a>
+                            </li>
+                            <li class="mobile-menu__social_item">
+                                <a href="" class="mobile-menu__social_link link">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
     </header>
     <main>
     <!--Шапка-->  
     <main>
     <section class="section">
         <h1 class="visually-hidden">Портфолио</h1>
-        <div class="container">
+        <div class="container btn-container">
          <ul class="button__list">
             <li class="button__item">
             <button class="button-secondary" type="button">Все</button></li>
@@ -356,6 +403,6 @@
             </div>
         </section>
     </footer>
-
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>

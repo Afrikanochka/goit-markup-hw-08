@@ -6,10 +6,14 @@
 .modal__head {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
+
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 .modal__field {
   display: block;
@@ -62,11 +66,16 @@
 
 .modal__desc {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
+
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .modal__box {
   display: inline-flex;
@@ -87,6 +96,8 @@
   color: var(--accent-color);
 }
 .modal-btn {
+  width: 200px;
+  height: 50px;
   padding: 10px 56px;
   margin: 0 auto;
 }
