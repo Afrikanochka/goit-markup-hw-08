@@ -93,12 +93,14 @@ img {
 .modal {
   position: relative;
   z-index: 10;
-  width: 100%;
+  width: 95vw;
+  height: 95vh;
   background-color: var(--primary-bg-color);
   padding: 40px;
   transform: scale(1);
-  width: 450px;
-  height: 610px;
+  max-width: 450px;
+  overflow-y: scroll;
+  max-height: 610px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -159,6 +161,7 @@ img {
   .header-logo {
     padding-top: 26px;
     padding-bottom: 26px;
+    margin-right: 88px;
   }
 }
 
@@ -932,6 +935,14 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .work__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
 .work__box {
   position: relative;
   overflow: hidden;
@@ -982,7 +993,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .work__desc {
-    padding: 20px 24px 56px;
+    flex-grow: 1;
   }
 }
 

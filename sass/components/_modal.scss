@@ -1,13 +1,15 @@
 .modal {
   position: relative;
   z-index: 10;
-  width: 100%;
+  width: 95vw;
+  height: 95vh;
 
   background-color: var(--primary-bg-color);
   padding: 40px;
   transform: scale(1);
-  width: 450px;
-  height: 610px;
+  max-width: 450px;
+  overflow-y: scroll;
+  max-height: 610px;
   @media screen and (min-width: 1200px) {
     max-width: 528px;
     min-height: 580px;
