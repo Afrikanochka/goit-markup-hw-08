@@ -183,6 +183,7 @@ img {
   .footer-logo {
     font-size: 26px;
     line-height: 1.19;
+    text-align: left;
   }
 }
 
@@ -1225,6 +1226,12 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .footer__address, .footer__wrap {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .footer__wrap {
     margin-left: 70px;
   }
@@ -1283,7 +1290,7 @@ img {
 @media screen and (min-width: 1200px) {
   .right-side {
     flex-basis: calc((100% - 2 * 30px) / 2);
-    text-align: left;
+    align-items: flex-start;
     justify-content: flex-start;
   }
 }

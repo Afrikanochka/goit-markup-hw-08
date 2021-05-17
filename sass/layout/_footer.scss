@@ -63,6 +63,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (min-width: 1200px) {
+      align-items: flex-start;
+    }
   }
   &__wrap {
     @media screen and (min-width: 1200px) {
@@ -112,7 +115,7 @@
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 2 * 30px) / 2);
-    text-align: left;
+    align-items: flex-start;
     justify-content: flex-start;
   }
 }
